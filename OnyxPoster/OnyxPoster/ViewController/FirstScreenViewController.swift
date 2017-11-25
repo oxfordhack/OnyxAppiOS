@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SVProgressHUD
 
 class FirstScreenViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -96,12 +97,16 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
                 
                     var sendToServer : Dictionary<String, String> = ["filename":userInputFileName, "filesize":String(imageSize), "base64StrImage":strBase64]
                     
+                    SVProgressHUD.show()
+                    
                     Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
 
                         let callBackJSON : JSON = JSON(response.result.value!)
                         print(callBackJSON)
 
                         print("it works!")
+                        
+                        SVProgressHUD.dismiss()
 
                     })
                     
