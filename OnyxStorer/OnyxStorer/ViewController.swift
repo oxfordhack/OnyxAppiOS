@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     var phoneID : String = ""
     var allocatedStorageStr : String = ""
     
-    let ENDPOINT_URL = ""
+    let ENDPOINT_URL = "https://onyxx.herokuapp.com/storer/storersetup"
+//    /192.76.8.77
+//    94.119.64.18
 
     @IBOutlet var becomeStorerBtn: UIButton!
     @IBOutlet var allocatedStorageLabel: UITextField!
@@ -44,9 +46,14 @@ class ViewController: UIViewController {
                 
                 let sendToServer : Dictionary<String, String> = ["phoneid":phoneID, "allocatedmemory":allocatedStorageStr]
                 
-                Alamofire.request(ENDPOINT_URL, method: .get, parameters: sendToServer).responseJSON(completionHandler: { (response) in
+                Alamofire.request(ENDPOINT_URL, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
                     
+                    let callBackJSON : JSON = JSON(response.result.value!)
+                    print(callBackJSON)
+                
 //                    if response.result
+                    print(self.phoneID)
+                    print("it works!")
                     
                 })
                 
