@@ -14,7 +14,7 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
-    let ENDPOINT_URL = "https://onyxx.herokuapp.com/poster/postercheck"
+    let ENDPOINT_URL = "localhost:3000/poster/postercheck"
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
