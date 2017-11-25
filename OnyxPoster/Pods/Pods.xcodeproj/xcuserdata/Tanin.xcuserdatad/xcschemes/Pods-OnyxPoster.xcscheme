@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6DC6E3CB266A795744C763AC7B8EE8A"
+               BlueprintIdentifier = "140FF2F62344BE090F62B04EFF21C31A"
                BuildableName = "Pods_OnyxPoster.framework"
                BlueprintName = "Pods-OnyxPoster"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6DC6E3CB266A795744C763AC7B8EE8A"
+            BlueprintIdentifier = "140FF2F62344BE090F62B04EFF21C31A"
             BuildableName = "Pods_OnyxPoster.framework"
             BlueprintName = "Pods-OnyxPoster"
             ReferencedContainer = "container:Pods.xcodeproj">

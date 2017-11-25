@@ -13,5 +13,6 @@ pod 'SVProgressHUD'
 pod 'NVActivityIndicatorView'
 pod 'SwiftyJSON'
 pod 'Alamofire'
+pod 'IQKeyboardManagerSwift'
 
 end
