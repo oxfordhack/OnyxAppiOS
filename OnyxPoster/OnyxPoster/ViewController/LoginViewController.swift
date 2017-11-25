@@ -14,7 +14,7 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
-    let ENDPOINT_URL = ""
+    let ENDPOINT_URL = "https://onyxx.herokuapp.com/poster/postercheck"
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -54,8 +54,8 @@ class LoginViewController: UIViewController {
                 
                 Alamofire.request(self.ENDPOINT_URL, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
 
-                    let callBackJSON : JSON = JSON(response.result.value!)
-                    print(callBackJSON)
+//                    let callBackJSON : JSON = JSON(response.result.value!)
+//                    print(callBackJSON)
                 
                     print("it works!")
 
