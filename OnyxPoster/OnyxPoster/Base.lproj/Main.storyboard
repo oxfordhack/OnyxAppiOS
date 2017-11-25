@@ -124,11 +124,12 @@
                         <outlet property="emailTextField" destination="roi-up-sUr" id="xHW-2n-MET"/>
                         <outlet property="passwordTextField" destination="8yy-AH-70Z" id="eNk-ta-Zfp"/>
                         <segue destination="g8N-H4-Blq" kind="show" identifier="logInToFirstScreen" id="tkP-AY-e2Q"/>
+                        <segue destination="HFl-EH-mae" kind="presentation" identifier="goToFileList" id="la9-DS-7vH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9m5-8i-MIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1484" y="-355.7721139430285"/>
+            <point key="canvasLocation" x="1578" y="-429"/>
         </scene>
         <!--First Screen View Controller-->
         <scene sceneID="ajV-CV-2gD">
@@ -201,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5M-6Y-3Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293.5999999999999" y="103.89805097451276"/>
+            <point key="canvasLocation" x="3455" y="-47"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LPe-iz-KR7">
@@ -277,13 +278,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJ0-Om-Rbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1484" y="601.34932533733138"/>
+            <point key="canvasLocation" x="1578" y="1003"/>
+        </scene>
+        <!--File List View Controller-->
+        <scene sceneID="jBr-K7-njQ">
+            <objects>
+                <viewController id="HFl-EH-mae" customClass="FileListViewController" customModule="OnyxPoster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EUO-7a-kh7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="3mE-zl-KSU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76z-4V-lMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3364" y="886"/>
         </scene>
     </scenes>
     <resources>
         <image name="add" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DjL-ep-plY"/>
+        <segue reference="tkP-AY-e2Q"/>
     </inferredMetricsTieBreakers>
 </document>

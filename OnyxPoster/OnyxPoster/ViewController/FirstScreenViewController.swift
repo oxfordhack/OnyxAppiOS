@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class FirstScreenViewController: UIViewController    , UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class FirstScreenViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet var sampleImage: UIImageView!
     @IBOutlet var fileNameTxtField: UITextField!
@@ -23,6 +23,13 @@ class FirstScreenViewController: UIViewController    , UINavigationControllerDel
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,14 +96,15 @@ class FirstScreenViewController: UIViewController    , UINavigationControllerDel
                 
                     var sendToServer : Dictionary<String, String> = ["filename":userInputFileName, "filesize":String(imageSize), "base64StrImage":strBase64]
                     
-                    Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
-                        
-                        let callBackJSON : JSON = JSON(response.result.value!)
-                        print(callBackJSON)
-                        
-                        print("it works!")
-                        
-                    })
+//                    Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
+//
+//                        let callBackJSON : JSON = JSON(response.result.value!)
+//                        print(callBackJSON)
+//
+//                        print("it works!")
+//
+//                    })
+                    
                     
                 }
                 

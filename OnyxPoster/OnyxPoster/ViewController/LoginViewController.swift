@@ -47,20 +47,24 @@ class LoginViewController: UIViewController {
                 
                 SVProgressHUD.dismiss()
                 
-                self.performSegue(withIdentifier: "logInToFirstScreen", sender: self)
-                
                 print(user?.uid)
                 let sendToServer : Dictionary = ["uid":user?.uid]
                 
-//                Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
-//
-//                    let callBackJSON : JSON = JSON(response.result.value!)
-//                    print(callBackJSON)
-//
-//                    print("it works!")
-//
-//                })
-                
+                Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
+
+                    let callBackJSON : JSON = JSON(response.result.value!)
+                    print(callBackJSON)
+                    
+                    if callBackJSON["error"] != nil{
+                        self.performSegue(withIdentifier: "logInToFirstScreen", sender: self)
+                    } else {
+                        self.performSegue(withIdentifier: "goToFileList", sender: self)
+                    }
+
+                    print("it works!")
+
+                })
+            
             }
             
         }
