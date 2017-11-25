@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44DDC34409F1CADE422AD13 /* Pods_OnyxPoster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9B6E63674C0910731859C3 /* Pods_OnyxPoster.framework */; };
+		F31263501FC9CD2E00BB4FE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F312634F1FC9CD2E00BB4FE4 /* LoginViewController.swift */; };
+		F31263521FC9CD5100BB4FE4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31263511FC9CD5100BB4FE4 /* SignUpViewController.swift */; };
+		F31263541FC9CDD300BB4FE4 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31263531FC9CDD300BB4FE4 /* FirstScreenViewController.swift */; };
 		F39AE7311FC9BA96003F227E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39AE7301FC9BA96003F227E /* AppDelegate.swift */; };
 		F39AE7331FC9BA96003F227E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39AE7321FC9BA96003F227E /* ViewController.swift */; };
 		F39AE7361FC9BA96003F227E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39AE7341FC9BA96003F227E /* Main.storyboard */; };
 		F39AE7391FC9BA96003F227E /* OnyxPoster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F39AE7371FC9BA96003F227E /* OnyxPoster.xcdatamodeld */; };
 		F39AE73B1FC9BA96003F227E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39AE73A1FC9BA96003F227E /* Assets.xcassets */; };
 		F39AE73E1FC9BA96003F227E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39AE73C1FC9BA96003F227E /* LaunchScreen.storyboard */; };
+		F39AE7461FC9CA64003F227E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39AE7451FC9CA63003F227E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9B6E63674C0910731859C3 /* Pods_OnyxPoster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnyxPoster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FA10F5FD382901F3F9ED39 /* Pods-OnyxPoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnyxPoster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnyxPoster/Pods-OnyxPoster.debug.xcconfig"; sourceTree = "<group>"; };
+		B5E5C2484940C54797E9362E /* Pods-OnyxPoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnyxPoster.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnyxPoster/Pods-OnyxPoster.release.xcconfig"; sourceTree = "<group>"; };
+		F312634F1FC9CD2E00BB4FE4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F31263511FC9CD5100BB4FE4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F31263531FC9CDD300BB4FE4 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		F39AE72D1FC9BA95003F227E /* OnyxPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnyxPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39AE7301FC9BA96003F227E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F39AE7321FC9BA96003F227E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,7 @@
 		F39AE73A1FC9BA96003F227E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F39AE73D1FC9BA96003F227E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F39AE73F1FC9BA96003F227E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39AE7451FC9CA63003F227E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44DDC34409F1CADE422AD13 /* Pods_OnyxPoster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EE7250A57B7CBE90E014BDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25FA10F5FD382901F3F9ED39 /* Pods-OnyxPoster.debug.xcconfig */,
+				B5E5C2484940C54797E9362E /* Pods-OnyxPoster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F312634E1FC9CD1100BB4FE4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F39AE7321FC9BA96003F227E /* ViewController.swift */,
+				F312634F1FC9CD2E00BB4FE4 /* LoginViewController.swift */,
+				F31263511FC9CD5100BB4FE4 /* SignUpViewController.swift */,
+				F31263531FC9CDD300BB4FE4 /* FirstScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		F39AE7241FC9BA95003F227E = {
 			isa = PBXGroup;
 			children = (
 				F39AE72F1FC9BA95003F227E /* OnyxPoster */,
 				F39AE72E1FC9BA95003F227E /* Products */,
+				9EE7250A57B7CBE90E014BDB /* Pods */,
+				FE4A840707581E3F47C527C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +91,24 @@
 		F39AE72F1FC9BA95003F227E /* OnyxPoster */ = {
 			isa = PBXGroup;
 			children = (
+				F312634E1FC9CD1100BB4FE4 /* ViewController */,
 				F39AE7301FC9BA96003F227E /* AppDelegate.swift */,
-				F39AE7321FC9BA96003F227E /* ViewController.swift */,
 				F39AE7341FC9BA96003F227E /* Main.storyboard */,
 				F39AE73A1FC9BA96003F227E /* Assets.xcassets */,
 				F39AE73C1FC9BA96003F227E /* LaunchScreen.storyboard */,
 				F39AE73F1FC9BA96003F227E /* Info.plist */,
+				F39AE7451FC9CA63003F227E /* GoogleService-Info.plist */,
 				F39AE7371FC9BA96003F227E /* OnyxPoster.xcdatamodeld */,
 			);
 			path = OnyxPoster;
+			sourceTree = "<group>";
+		};
+		FE4A840707581E3F47C527C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B6E63674C0910731859C3 /* Pods_OnyxPoster.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F39AE7421FC9BA96003F227E /* Build configuration list for PBXNativeTarget "OnyxPoster" */;
 			buildPhases = (
+				C1AFF139755159583856A945 /* [CP] Check Pods Manifest.lock */,
 				F39AE7291FC9BA95003F227E /* Sources */,
 				F39AE72A1FC9BA95003F227E /* Frameworks */,
 				F39AE72B1FC9BA95003F227E /* Resources */,
+				B419D1D49668B624150193EC /* [CP] Embed Pods Frameworks */,
+				F8CA969D02B94AB43D670308 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39AE73E1FC9BA96003F227E /* LaunchScreen.storyboard in Resources */,
+				F39AE7461FC9CA64003F227E /* GoogleService-Info.plist in Resources */,
 				F39AE73B1FC9BA96003F227E /* Assets.xcassets in Resources */,
 				F39AE7361FC9BA96003F227E /* Main.storyboard in Resources */,
 			);
@@ -134,14 +182,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B419D1D49668B624150193EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OnyxPoster/Pods-OnyxPoster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnyxPoster/Pods-OnyxPoster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1AFF139755159583856A945 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnyxPoster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CA969D02B94AB43D670308 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnyxPoster/Pods-OnyxPoster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F39AE7291FC9BA95003F227E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31263501FC9CD2E00BB4FE4 /* LoginViewController.swift in Sources */,
+				F31263541FC9CDD300BB4FE4 /* FirstScreenViewController.swift in Sources */,
 				F39AE7331FC9BA96003F227E /* ViewController.swift in Sources */,
 				F39AE7311FC9BA96003F227E /* AppDelegate.swift in Sources */,
 				F39AE7391FC9BA96003F227E /* OnyxPoster.xcdatamodeld in Sources */,
+				F31263521FC9CD5100BB4FE4 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +393,7 @@
 		};
 		F39AE7431FC9BA96003F227E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25FA10F5FD382901F3F9ED39 /* Pods-OnyxPoster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +409,7 @@
 		};
 		F39AE7441FC9BA96003F227E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E5C2484940C54797E9362E /* Pods-OnyxPoster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
