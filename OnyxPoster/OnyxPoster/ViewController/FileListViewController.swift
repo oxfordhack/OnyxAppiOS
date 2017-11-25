@@ -8,12 +8,20 @@
 
 import UIKit
 
-class FileListViewController: UIViewController {
+class FileListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var fileListTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        fileListTableView.delegate = self
+        fileListTableView.dataSource = self
+        
+        fileListTableView.register(UINib(nibName: "FileTableViewCell", bundle: nil), forCellReuseIdentifier: "fileNameCell")
+        
+        configureTableView()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +29,21 @@ class FileListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fileNameCell", for: indexPath) as? FileTableViewCell
+        
+        var fakeData = ["photo1", "photo2", "photo3"]
+        cell?.fileNameLabel.text = fakeData[indexPath.row]
+        
+        return cell!
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -31,5 +53,10 @@ class FileListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func configureTableView() {
+        fileListTableView.rowHeight = UITableViewAutomaticDimension
+        fileListTableView.estimatedRowHeight = 120.0
+    }
 
 }
