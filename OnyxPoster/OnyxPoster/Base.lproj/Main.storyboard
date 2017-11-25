@@ -123,8 +123,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="roi-up-sUr" id="xHW-2n-MET"/>
                         <outlet property="passwordTextField" destination="8yy-AH-70Z" id="eNk-ta-Zfp"/>
-                        <segue destination="g8N-H4-Blq" kind="show" identifier="logInToFirstScreen" id="tkP-AY-e2Q"/>
-                        <segue destination="HFl-EH-mae" kind="presentation" identifier="goToFileList" id="la9-DS-7vH"/>
+                        <segue destination="g8N-H4-Blq" kind="presentation" identifier="logInToFirstScreen" id="KIG-m2-NKo"/>
+                        <segue destination="HFl-EH-mae" kind="presentation" identifier="goToFileList" id="eT0-Bi-Oaf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9m5-8i-MIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="rXT-qC-EQP">
-                                <rect key="frame" x="100" y="103" width="175" height="160"/>
+                                <rect key="frame" x="100" y="92" width="175" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="ERQ-x7-biK"/>
                                     <constraint firstAttribute="width" secondItem="rXT-qC-EQP" secondAttribute="height" multiplier="35:32" id="yFc-DK-8Vt"/>
@@ -158,7 +158,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E4-4y-r6n">
-                                <rect key="frame" x="95" y="430" width="184" height="57"/>
+                                <rect key="frame" x="95" y="419" width="184" height="57"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="184" id="4Kj-YJ-OqC"/>
@@ -172,7 +172,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-DT-c6U">
-                                <rect key="frame" x="108.5" y="103" width="157" height="160"/>
+                                <rect key="frame" x="108.5" y="92" width="157" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ebY-DT-c6U" secondAttribute="height" multiplier="157:160" id="8vp-11-WzB"/>
                                     <constraint firstAttribute="width" constant="157" id="Yn4-XA-Fyc"/>
@@ -315,6 +315,6 @@
         <image name="add" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hI2-7s-ftt"/>
+        <segue reference="KIG-m2-NKo"/>
     </inferredMetricsTieBreakers>
 </document>
