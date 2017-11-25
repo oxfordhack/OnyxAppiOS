@@ -16,7 +16,7 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
     @IBOutlet var fileNameTxtField: UITextField!
     var imageToStore : UIImage = UIImage()
     var imageSize: Int = 0
-    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/postercheck")
+    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/posterfile")
     var imgData: NSData = NSData()
     
     override func viewDidLoad() {
@@ -96,14 +96,14 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
                 
                     var sendToServer : Dictionary<String, String> = ["filename":userInputFileName, "filesize":String(imageSize), "base64StrImage":strBase64]
                     
-//                    Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
-//
-//                        let callBackJSON : JSON = JSON(response.result.value!)
-//                        print(callBackJSON)
-//
-//                        print("it works!")
-//
-//                    })
+                    Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
+
+                        let callBackJSON : JSON = JSON(response.result.value!)
+                        print(callBackJSON)
+
+                        print("it works!")
+
+                    })
                     
                     
                 }

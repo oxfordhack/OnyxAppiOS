@@ -50,20 +50,20 @@ class LoginViewController: UIViewController {
                 print(user?.uid)
                 let sendToServer : Dictionary = ["uid":user?.uid]
                 
-//                Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
-//
-//                    let callBackJSON : JSON = JSON(response.result.value!)
-//                    print(callBackJSON)
-//
-//                    if callBackJSON["error"] != nil{
-//                        self.performSegue(withIdentifier: "logInToFirstScreen", sender: self)
-//                    } else {
-//                        self.performSegue(withIdentifier: "goToFileList", sender: self)
-//                    }
-//
-//                    print("it works!")
-//
-//                })
+                Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
+
+                    let callBackJSON : JSON = JSON(response.result.value!)
+                    print(callBackJSON)
+
+                    if callBackJSON["error"] != nil{
+                        self.performSegue(withIdentifier: "logInToFirstScreen", sender: self)
+                    } else {
+                        self.performSegue(withIdentifier: "goToFileList", sender: self)
+                    }
+
+                    print("it works!")
+
+                })
                 
                 self.performSegue(withIdentifier: "goToFileList", sender: self)
             
