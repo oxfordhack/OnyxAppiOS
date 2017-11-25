@@ -54,8 +54,9 @@ class LoginViewController: UIViewController {
 
                     let callBackJSON : JSON = JSON(response.result.value!)
                     print(callBackJSON)
+                    
 
-                    if callBackJSON["error"] != nil{
+                    if callBackJSON["error"] == true{
                         self.performSegue(withIdentifier: "logInToFirstScreen", sender: self)
                     } else {
                         self.performSegue(withIdentifier: "goToFileList", sender: self)
@@ -65,8 +66,6 @@ class LoginViewController: UIViewController {
 
                 })
                 
-                self.performSegue(withIdentifier: "goToFileList", sender: self)
-            
             }
             
         }
