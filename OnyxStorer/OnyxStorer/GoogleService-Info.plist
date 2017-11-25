@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>837949914444-0a5ai18t68u6oqv7mff7eb33s3d6g71t.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.837949914444-0a5ai18t68u6oqv7mff7eb33s3d6g71t</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDqWEsE8nMVoLaHqNmJgEfPRtisVsgjclE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>837949914444</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.landtanin.OnyxStorer</string>
+	<key>PROJECT_ID</key>
+	<string>onyx-2d4dc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>onyx-2d4dc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:837949914444:ios:d24413c05f31dade</string>
+	<key>DATABASE_URL</key>
+	<string>https://onyx-2d4dc.firebaseio.com</string>
+</dict>
+</plist>
