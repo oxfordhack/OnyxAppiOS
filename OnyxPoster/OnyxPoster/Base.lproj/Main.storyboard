@@ -137,43 +137,9 @@
                     <view key="view" contentMode="scaleToFill" id="w6m-eW-MB1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83d-Ig-OT3">
-                                <rect key="frame" x="117" y="266" width="140" height="135"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="Cwi-H1-iJi"/>
-                                    <constraint firstAttribute="width" secondItem="83d-Ig-OT3" secondAttribute="height" multiplier="28:27" id="qOr-BY-2CI"/>
-                                </constraints>
-                                <state key="normal" image="add">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="addPhotoBtn:" destination="g8N-H4-Blq" eventType="touchUpInside" id="VGc-wI-X25"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHn-Ra-fUP">
-                                <rect key="frame" x="109" y="435" width="156" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Upload file">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="uploadTapped:" destination="g8N-H4-Blq" eventType="touchUpInside" id="Lhl-c7-qgl"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="83d-Ig-OT3" firstAttribute="centerX" secondItem="745-XT-0B3" secondAttribute="centerX" id="3iI-1j-K3d"/>
-                            <constraint firstItem="83d-Ig-OT3" firstAttribute="centerY" secondItem="745-XT-0B3" secondAttribute="centerY" constant="-32" id="79R-uE-b8h"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="745-XT-0B3"/>
                     </view>
-                    <connections>
-                        <outlet property="plusButton" destination="83d-Ig-OT3" id="dkN-XK-Nve"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5M-6Y-3Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,9 +222,6 @@
             <point key="canvasLocation" x="1484" y="601.34932533733138"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="add" width="128" height="128"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DjL-ep-plY"/>
     </inferredMetricsTieBreakers>

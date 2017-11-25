@@ -14,7 +14,7 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
-    let ENDPOINT_URL = "localhost:3000/poster/postercheck"
+    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/postercheck")
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -52,10 +52,10 @@ class LoginViewController: UIViewController {
                 print(user?.uid)
                 let sendToServer : Dictionary = ["uid":user?.uid]
                 
-                Alamofire.request(self.ENDPOINT_URL, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
+                Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
 
-//                    let callBackJSON : JSON = JSON(response.result.value!)
-//                    print(callBackJSON)
+                    let callBackJSON : JSON = JSON(response.result.value!)
+                    print(callBackJSON)
                 
                     print("it works!")
 
