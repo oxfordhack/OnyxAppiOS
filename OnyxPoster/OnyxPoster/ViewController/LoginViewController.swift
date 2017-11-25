@@ -52,14 +52,14 @@ class LoginViewController: UIViewController {
                 print(user?.uid)
                 let sendToServer : Dictionary = ["uid":user?.uid]
                 
-                Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
-
-                    let callBackJSON : JSON = JSON(response.result.value!)
-                    print(callBackJSON)
-                
-                    print("it works!")
-
-                })
+//                Alamofire.request(self.ENDPOINT_URL!, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
+//
+//                    let callBackJSON : JSON = JSON(response.result.value!)
+//                    print(callBackJSON)
+//
+//                    print("it works!")
+//
+//                })
                 
             }
             

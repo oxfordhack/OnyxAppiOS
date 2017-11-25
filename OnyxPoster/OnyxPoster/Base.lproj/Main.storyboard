@@ -137,9 +137,67 @@
                     <view key="view" contentMode="scaleToFill" id="w6m-eW-MB1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="rXT-qC-EQP">
+                                <rect key="frame" x="100" y="103" width="175" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="ERQ-x7-biK"/>
+                                    <constraint firstAttribute="width" secondItem="rXT-qC-EQP" secondAttribute="height" multiplier="35:32" id="yFc-DK-8Vt"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="file name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWj-Pw-iEP">
+                                <rect key="frame" x="91" y="318" width="193" height="30"/>
+                                <color key="backgroundColor" red="0.81263013049999999" green="0.81159905499999996" blue="0.82960937499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="FJ5-WG-5dU"/>
+                                    <constraint firstAttribute="width" secondItem="AWj-Pw-iEP" secondAttribute="height" multiplier="193:30" id="RKd-9P-T3R"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E4-4y-r6n">
+                                <rect key="frame" x="95" y="430" width="184" height="57"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="4Kj-YJ-OqC"/>
+                                    <constraint firstAttribute="width" secondItem="8E4-4y-r6n" secondAttribute="height" multiplier="184:57" id="yZ1-xP-Pbo"/>
+                                </constraints>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadTapped:" destination="g8N-H4-Blq" eventType="touchUpInside" id="JSg-mh-qDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-DT-c6U">
+                                <rect key="frame" x="108.5" y="103" width="157" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ebY-DT-c6U" secondAttribute="height" multiplier="157:160" id="8vp-11-WzB"/>
+                                    <constraint firstAttribute="width" constant="157" id="Yn4-XA-Fyc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="addPhotoBtn:" destination="g8N-H4-Blq" eventType="touchUpInside" id="7Oj-LZ-fe1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AWj-Pw-iEP" firstAttribute="top" secondItem="rXT-qC-EQP" secondAttribute="bottom" constant="54" id="3e0-xc-Ki5"/>
+                            <constraint firstItem="AWj-Pw-iEP" firstAttribute="centerX" secondItem="745-XT-0B3" secondAttribute="centerX" id="5iv-MA-0NV"/>
+                            <constraint firstItem="8E4-4y-r6n" firstAttribute="centerX" secondItem="745-XT-0B3" secondAttribute="centerX" id="9OK-w9-5cK"/>
+                            <constraint firstItem="8E4-4y-r6n" firstAttribute="top" secondItem="AWj-Pw-iEP" secondAttribute="bottom" constant="83" id="R7k-fI-jil"/>
+                            <constraint firstItem="rXT-qC-EQP" firstAttribute="centerY" secondItem="745-XT-0B3" secondAttribute="centerY" multiplier="3:6" id="oSP-GI-bOs"/>
+                            <constraint firstItem="ebY-DT-c6U" firstAttribute="centerX" secondItem="745-XT-0B3" secondAttribute="centerX" id="tt2-XM-Vjt"/>
+                            <constraint firstItem="ebY-DT-c6U" firstAttribute="centerY" secondItem="745-XT-0B3" secondAttribute="centerY" multiplier="3:6" id="uNQ-Z8-2cC"/>
+                            <constraint firstItem="rXT-qC-EQP" firstAttribute="centerX" secondItem="745-XT-0B3" secondAttribute="centerX" id="w4m-Fh-3aY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="745-XT-0B3"/>
                     </view>
+                    <connections>
+                        <outlet property="fileNameTxtField" destination="AWj-Pw-iEP" id="uQV-jp-ASK"/>
+                        <outlet property="sampleImage" destination="rXT-qC-EQP" id="fD4-9W-q0P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5M-6Y-3Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,6 +280,9 @@
             <point key="canvasLocation" x="1484" y="601.34932533733138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="128" height="128"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DjL-ep-plY"/>
     </inferredMetricsTieBreakers>
