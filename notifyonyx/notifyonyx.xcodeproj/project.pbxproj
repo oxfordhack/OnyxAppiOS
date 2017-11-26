@@ -15,6 +15,12 @@
 		443B02571FCA897800275BC6 /* notifyonyxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B02561FCA897800275BC6 /* notifyonyxTests.swift */; };
 		443B02621FCA897800275BC6 /* notifyonyxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B02611FCA897800275BC6 /* notifyonyxUITests.swift */; };
 		443B02711FCA8C2700275BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 443B02701FCA8C2700275BC6 /* GoogleService-Info.plist */; };
+		447D33071FCAC2D600652304 /* add-button-inside-black-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 447D33061FCAC2D600652304 /* add-button-inside-black-circle.png */; };
+		447D33091FCAC3EB00652304 /* initialcheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D33081FCAC3EB00652304 /* initialcheckerViewController.swift */; };
+		447D330B1FCAD1B200652304 /* notemptyfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D330A1FCAD1B200652304 /* notemptyfilesViewController.swift */; };
+		447D330D1FCAD2D400652304 /* filenamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D330C1FCAD2D400652304 /* filenamesTableViewCell.swift */; };
+		447D330F1FCADAF400652304 /* fetchuploaderfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D330E1FCADAF400652304 /* fetchuploaderfiles.swift */; };
+		447D33111FCAE62200652304 /* setupfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D33101FCAE62200652304 /* setupfileViewController.swift */; };
 		9E0EAE556065E5A0ACA0E167 /* Pods_notifyonyxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A67ED610EBC64BFF85C0E3 /* Pods_notifyonyxTests.framework */; };
 		ADEC1191A809FB4460F220AD /* Pods_notifyonyx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145B4202129349FCA0813FEB /* Pods_notifyonyx.framework */; };
 		F7B13E96AFD6CB8041E84B1A /* Pods_notifyonyxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FCFA2D4B36343A77F68DF5 /* Pods_notifyonyxUITests.framework */; };
@@ -56,6 +62,12 @@
 		443B02631FCA897800275BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443B026F1FCA897E00275BC6 /* notifyonyx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = notifyonyx.entitlements; sourceTree = "<group>"; };
 		443B02701FCA8C2700275BC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		447D33061FCAC2D600652304 /* add-button-inside-black-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-button-inside-black-circle.png"; sourceTree = "<group>"; };
+		447D33081FCAC3EB00652304 /* initialcheckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialcheckerViewController.swift; sourceTree = "<group>"; };
+		447D330A1FCAD1B200652304 /* notemptyfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notemptyfilesViewController.swift; sourceTree = "<group>"; };
+		447D330C1FCAD2D400652304 /* filenamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filenamesTableViewCell.swift; sourceTree = "<group>"; };
+		447D330E1FCADAF400652304 /* fetchuploaderfiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchuploaderfiles.swift; sourceTree = "<group>"; };
+		447D33101FCAE62200652304 /* setupfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setupfileViewController.swift; sourceTree = "<group>"; };
 		469333223E4E8490B9CD8D61 /* Pods-notifyonyx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifyonyx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notifyonyx/Pods-notifyonyx.debug.xcconfig"; sourceTree = "<group>"; };
 		7DE0278F4D909203B63D4F08 /* Pods-notifyonyx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifyonyx.release.xcconfig"; path = "Pods/Target Support Files/Pods-notifyonyx/Pods-notifyonyx.release.xcconfig"; sourceTree = "<group>"; };
 		87FCFA2D4B36343A77F68DF5 /* Pods_notifyonyxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifyonyxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +144,14 @@
 			children = (
 				443B026F1FCA897E00275BC6 /* notifyonyx.entitlements */,
 				443B02411FCA897800275BC6 /* AppDelegate.swift */,
+				447D33081FCAC3EB00652304 /* initialcheckerViewController.swift */,
+				447D330A1FCAD1B200652304 /* notemptyfilesViewController.swift */,
 				443B02431FCA897800275BC6 /* ViewController.swift */,
+				447D330C1FCAD2D400652304 /* filenamesTableViewCell.swift */,
+				447D330E1FCADAF400652304 /* fetchuploaderfiles.swift */,
+				447D33101FCAE62200652304 /* setupfileViewController.swift */,
 				443B02451FCA897800275BC6 /* Main.storyboard */,
+				447D33061FCAC2D600652304 /* add-button-inside-black-circle.png */,
 				443B02481FCA897800275BC6 /* Assets.xcassets */,
 				443B024A1FCA897800275BC6 /* LaunchScreen.storyboard */,
 				443B024D1FCA897800275BC6 /* Info.plist */,
@@ -295,6 +313,7 @@
 				443B02491FCA897800275BC6 /* Assets.xcassets in Resources */,
 				443B02471FCA897800275BC6 /* Main.storyboard in Resources */,
 				443B02711FCA8C2700275BC6 /* GoogleService-Info.plist in Resources */,
+				447D33071FCAC2D600652304 /* add-button-inside-black-circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +476,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447D330F1FCADAF400652304 /* fetchuploaderfiles.swift in Sources */,
+				447D33091FCAC3EB00652304 /* initialcheckerViewController.swift in Sources */,
+				447D330D1FCAD2D400652304 /* filenamesTableViewCell.swift in Sources */,
 				443B02441FCA897800275BC6 /* ViewController.swift in Sources */,
+				447D330B1FCAD1B200652304 /* notemptyfilesViewController.swift in Sources */,
+				447D33111FCAE62200652304 /* setupfileViewController.swift in Sources */,
 				443B02421FCA897800275BC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

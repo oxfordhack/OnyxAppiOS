@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet var allocatedStorageLabel: UITextField!
     @IBOutlet var becomeStorerBtn: UIButton!
     
-    let ENDPOINT_URL = "https://onyxx.herokuapp.com/storer/storersetup"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,40 +35,6 @@ class ViewController: UIViewController {
     
     @IBAction func becomeStorerAction(_ sender: UIButton) {
         
-        if allocatedStorageLabel.text != "" {
-            
-            if let allocatedStorageCheck = allocatedStorageLabel.text {
-                
-                allocatedStorageStr = allocatedStorageCheck
-                
-                let sendToServer : Dictionary<String, String> = ["phoneid":phoneID, "allocatedmemory":allocatedStorageStr]
-                
-                Alamofire.request(ENDPOINT_URL, method: .post, parameters: sendToServer).responseJSON(completionHandler: { (response) in
-                    
-                    let callBackJSON : JSON = JSON(response.result.value!)
-                    print(callBackJSON)
-                    
-                    print(self.phoneID)
-                    print("it works!")
-                    
-                })
-                
-            }
-            
-        } else {
-            
-            let alertController = UIAlertController(title: "Information needed", message: "Please specify the amount of storage you want to allocate to the system", preferredStyle: .alert)
-            
-            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
-                (result : UIAlertAction) -> Void in
-                print("OK")
-            }
-            
-            alertController.addAction(okAction)
-            
-            self.present(alertController, animated: true, completion: nil)
-            
-        }
         
         
     }

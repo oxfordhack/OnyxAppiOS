@@ -11,7 +11,10 @@ target 'notifyonyx' do
   pod ‘NVActivityIndicatorView’
   pod ‘SwiftyJSON’ 
   pod ‘Alamofire’
-  pod ‘IQKeyboardManagerSwift’
+  pod 'IQKeyboardManagerSwift'
+  pod 'SnapKit'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database’
 
   # Pods for notifyonyx
 
