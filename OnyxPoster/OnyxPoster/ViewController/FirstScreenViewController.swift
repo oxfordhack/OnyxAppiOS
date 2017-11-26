@@ -17,7 +17,7 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
     @IBOutlet var fileNameTxtField: UITextField!
     var imageToStore : UIImage = UIImage()
     var imageSize: Int = 0
-    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/postfile")
+    let ENDPOINT_URL = URL(string:"http://onyxx.herokuapp.com/poster/postfile")
     var imgDataNSString: NSData = NSData()
     
     override func viewDidLoad() {

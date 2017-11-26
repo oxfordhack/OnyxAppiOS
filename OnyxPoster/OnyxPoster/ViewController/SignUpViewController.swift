@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/postercreate")
+    let ENDPOINT_URL = URL(string:"http://onyxx.herokuapp.com/poster/postercreate")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController {
                 print(error)
             } else {
                 // success
-                print("Registration successful")
+                print("Firebase Registration successful")
                 SVProgressHUD.dismiss()
                 
                 let sendToServer : Dictionary = ["uid":user?.uid]
