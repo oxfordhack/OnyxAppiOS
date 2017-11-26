@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'notifyonyx' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod ‘Firebase’
+  pod ‘Firebase/Core’
+  pod ‘Firebase/Messaging’
+  pod ‘SVProgressHUD’
+  pod ‘NVActivityIndicatorView’
+  pod ‘SwiftyJSON’ 
+  pod ‘Alamofire’
+  pod ‘IQKeyboardManagerSwift’
+
+  # Pods for notifyonyx
+
+  target 'notifyonyxTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'notifyonyxUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
