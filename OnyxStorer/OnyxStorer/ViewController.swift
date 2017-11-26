@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
 //        phoneID = UIDevice.current.identifierForVendor!.uuidString
-        phoneID = InstanceID.instanceID().token()!
+        phoneID = Messaging.messaging().fcmToken!
         
     }
 
