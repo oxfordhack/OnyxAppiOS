@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import Firebase
+import FirebaseInstanceID
 
 class ViewController: UIViewController {
     
@@ -27,7 +28,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        phoneID = UIDevice.current.identifierForVendor!.uuidString
+//        phoneID = UIDevice.current.identifierForVendor!.uuidString
+        phoneID = InstanceID.instanceID().token()!
         
     }
 
