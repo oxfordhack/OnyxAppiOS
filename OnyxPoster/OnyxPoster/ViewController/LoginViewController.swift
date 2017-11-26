@@ -14,7 +14,7 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
-    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/postercheck")
+    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/postersignin")
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
 
                     let callBackJSON : JSON = JSON(response.result.value!)
                     print(callBackJSON)
-                    
+
 
                     if callBackJSON["error"] == true{
                         self.performSegue(withIdentifier: "logInToFirstScreen", sender: self)
@@ -65,13 +65,18 @@ class LoginViewController: UIViewController {
                     print("it works!")
 
                 })
+            
+                // save uid
+                UserDefaults.standard.set(user?.uid, forKey: "uid")
+                
+                // ******************* MAKE SURE YOU DELETE THIS **********************************************
+//                self.performSegue(withIdentifier: "logInToFirstScreen", sender: self)
                 
             }
             
         }
         
     }
-    
     
     /*
     // MARK: - Navigation

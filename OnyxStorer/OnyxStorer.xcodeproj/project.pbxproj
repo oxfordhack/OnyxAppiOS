@@ -381,6 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4246PMBZVS;
 				INFOPLIST_FILE = OnyxStorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landtanin.OnyxStorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4246PMBZVS;
 				INFOPLIST_FILE = OnyxStorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landtanin.OnyxStorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";

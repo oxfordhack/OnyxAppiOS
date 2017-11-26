@@ -17,8 +17,8 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
     @IBOutlet var fileNameTxtField: UITextField!
     var imageToStore : UIImage = UIImage()
     var imageSize: Int = 0
-    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/posterfile")
-    var imgData: NSData = NSData()
+    let ENDPOINT_URL = URL(string:"http://localhost:3000/poster/postfile")
+    var imgDataNSString: NSData = NSData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,10 +67,12 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
             imageToStore = image
             sampleImage.image = image
 
-            imgData = NSData(data: UIImageJPEGRepresentation((image), 1)!)
+//            imgDataNSString = NSData(data: UIImageJPEGRepresentation((image), 1)!)
+            imgDataNSString = NSData(data: UIImagePNGRepresentation((image))!)
+            
             // var imgData: NSData = UIImagePNGRepresentation(image)
             // you can also replace UIImageJPEGRepresentation with UIImagePNGRepresentation.
-            imageSize = imgData.length
+            imageSize = imgDataNSString.length
             print("size of image in KB: %f ", Double(imageSize) / 1024.0)
 
         }
@@ -90,12 +92,24 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
                 // file size
                 
                 // convert image to base 64
-                let strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
+                let strBase64 = imgDataNSString.base64EncodedString(options: .lineLength64Characters)
                 print(strBase64)
+                
+                // retreive uid from UserDefault
+                var uidToServer : String = ""
+
+                let uidObject = UserDefaults.standard.object(forKey: "uid")
+                if let uid = uidObject as? String {
+                    
+                    print(uid)
+                    uidToServer = String(uid)
+                    
+                }
+  
                 
                 if let userInputFileName = fileNameTxtField.text{
                 
-                    var sendToServer : Dictionary<String, String> = ["filename":userInputFileName, "filesize":String(imageSize), "base64StrImage":strBase64]
+                    var sendToServer : Dictionary<String, String> = ["uid":uidToServer,"filename":userInputFileName, "filesize":String(imageSize), "base64StrImage":strBase64]
                     
                     SVProgressHUD.show()
                     
@@ -103,21 +117,58 @@ class FirstScreenViewController: UIViewController, UINavigationControllerDelegat
 
                         let callBackJSON : JSON = JSON(response.result.value!)
                         print(callBackJSON)
-
-                        print("it works!")
+                        
+                        // receive status and array of file name
+                        if callBackJSON["callback"] == true {
+                            
+                            let arrayRetured = callBackJSON["callback"]["message"].stringValue
+                            print("we got data \(arrayRetured)")
+                            
+                        } else {
+                            
+                            print("No data")
+                            
+                        }
                         
                         SVProgressHUD.dismiss()
 
                     })
                     
-                    
                 }
-                
 
             }
 
         }
 
     }
+    
+    // prgm mark ----
+    
+    // convert images into base64 and keep them into string
+    
+//    func convertImageToBase64(image: UIImage) -> String {
+//
+//        var imageDataConvert = UIImagePNGRepresentation(image)
+//        let base64String = imageDataConvert.base64EncodedString(options: .allZeros)
+//
+//        return base64String
+//
+//    }// end convertImageToBase64
+//
+//
+//    // prgm mark ----
+//
+//    // convert images into base64 and keep them into string
+//
+//    func convertBase64ToImage(base64String: String) -> UIImage {
+//
+//        let decodedData = NSData(base64EncodedString: base64String, options: NSDataBase64DecodingOptions(rawValue: 0) )
+//
+//        var decodedimage = UIImage(data: decodedData!)
+//
+//        return decodedimage!
+//
+//    }// end convertBase64ToImage
+
     
 }
